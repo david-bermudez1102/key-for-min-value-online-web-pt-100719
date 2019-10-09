@@ -6,7 +6,7 @@ def key_for_min_value(name_hash)
   values = []
   name_hash.collect.with_index { |(key,value), index|
     values << value
-    while counter < name_hash.length
+    while counter < name_hash.length do
       key_with_min_value = key
     end
   }
