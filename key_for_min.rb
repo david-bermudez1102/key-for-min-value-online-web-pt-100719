@@ -6,7 +6,7 @@ def key_for_min_value(name_hash)
   values = []
   name_hash.collect.with_index { |(key,value), index|
     values << value
-    if(value < values[index+1])
+    if(value < values[index+1] && index<=values.length)
       key_with_min_value = key
     end
   }
