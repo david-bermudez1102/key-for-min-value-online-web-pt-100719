@@ -3,8 +3,12 @@
 
 def key_for_min_value(name_hash)
   key_with_min_value = nil
-  min_value = name_hash.first
-  name_hash.collect { |key,value|
+  min_value = 0
+  name_hash.collect.with_index { |(key,value), index|
+    if(index==0)
+      min_value = value
+    end
+    
       if(min_value > value)
         min_value = value
       end
