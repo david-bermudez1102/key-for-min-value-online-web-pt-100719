@@ -3,16 +3,12 @@
 
 def key_for_min_value(name_hash)
   key_with_min_value = nil
-  values = []
+  min_value = 1000
   name_hash.collect.with_index { |(key,value), index|
     values << value
-    counter=0
-    while counter < name_hash.length do
-      if(value < values[index-1])
-        key_with_min_value = key
+      if(min_value > value)
+        min_value = value
       end
-      counter += 1
-    end
   }
   key_with_min_value
 end
