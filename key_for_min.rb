@@ -3,7 +3,7 @@
 
 def key_for_min_value(name_hash)
   key_with_min_value = nil
-  min_value = 1000
+  min_value = name_hash.first
   name_hash.collect { |key,value|
       if(min_value > value)
         min_value = value
