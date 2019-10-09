@@ -8,7 +8,7 @@ def key_for_min_value(name_hash)
     values << value
     counter=0
     while counter < name_hash.length do
-      if()
+      if(value < values[index-1])
         key_with_min_value = key
       end
       counter += 1
